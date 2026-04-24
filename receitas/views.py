@@ -1,8 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render # essa função renderiza arquivos
 from django.http import HttpResponse
 
 def Home(request):
-    return HttpResponse('Home 1')
+    return render(request, 'receitas/home.html')
 
 def Sobre(request):
     return HttpResponse('Sobre')
