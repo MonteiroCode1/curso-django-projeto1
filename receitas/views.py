@@ -10,4 +10,4 @@ def Sobre(request):
     return render(request, 'me_apague/temp.html')
 
 def Contato(request):
-    return HttpResponse('Contato')
+    return render(request, 'receitas/contato.html')
